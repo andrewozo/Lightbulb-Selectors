@@ -7,17 +7,26 @@ let count = 0;
 
 lightBulb1.addEventListener("click", () => {
   count++;
-  subtitle.innerHTML = `You've clicked the lights ${count} times`;
+  subtitle.innerHTML =
+    count <= 1
+      ? `You've clicked the lights ${count} time `
+      : `You've clicked the lights ${count} times`;
   lightBulb1.classList.toggle("active");
 });
 lightBulb2.addEventListener("click", () => {
   count++;
-  subtitle.innerHTML = `You've clicked the lights ${count} times`;
+  subtitle.innerHTML =
+    count <= 1
+      ? `You've clicked the lights ${count} time `
+      : `You've clicked the lights ${count} times`;
 
   lightBulb2.classList.toggle("active");
 });
 lightBulb3.addEventListener("click", () => {
   count++;
-  subtitle.innerHTML = `You've clicked the lights ${count} times`;
+  subtitle.innerHTML =
+    count <= 1
+      ? `You've clicked the lights ${count} time `
+      : `You've clicked the lights ${count} times`;
   lightBulb3.classList.toggle("active");
 });
